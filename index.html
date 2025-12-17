@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>AR Multi-Box Example</title>
+<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+</head>
+<body style="margin:0; overflow:hidden;">
+<a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;">
+<!--กล่องตัวที่1-->
+<a-box position="-0.5 0 -1" rotation="0 0 0" width="0.3" height="0.3" depth="0.3" color="#4CC3D9" shadow animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
+></a-box>
+<!-- กล่องตัวที่ 2 -->
+<a-box position="0.5 0 -1.5" rotation="0 45 0" width="0.4" height="0.4" depth="0.4" color="#EF2D5E" shadow animation="property: rotation; to: 0 360 0; loop: true; dur: 6000"
+></a-box>
+<!-- กล่องตัวที่ 3 -->
+<a-box position="0 0 -2" rotation="0 90 0" width="0.5" height="0.5" depth="0.5" color="#FFC65D" shadow animation="property: rotation; to: 0 360 0; loop: true; dur: 8000"
+></a-box>
+<!-- กล้องผู้ใช้-->
+<a-camera 
+    rotation-reader 
+    look-controls 
+    wasd-controls
+></a-camera>
+</a-scene>
+</body>
+</html>

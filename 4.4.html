@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>A-Entity Autoplay Sound</title>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+<!-- เสียงแบบ autoplay ผ่าน a-entity-->
+<a-entity id="bgmPlayer"
+sound="src: url(sound/bgm.mp3); autoplay: true; loop: true; volume: 1">
+</a-entity>
+<!-- วัตถุในฉาก -->
+<a-box position="0 1 -3" color="#4CC3D9"></a-box>
+</a-scene>
+</body>
+</html>

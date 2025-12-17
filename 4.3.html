@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>A-Frame Autoplay Sound</title>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+<button id="startBtn" style="position:absolute; top: 20px; left:20px; z-index:999;">
+เริ่มเล่นเสียง
+</button>
+<a-scene>
+<a-sound
+id="bgm"
+src="url(sound/bgm.mp3)"
+autoplay="true"
+loop="true">
+</a-sound>
+<a-box position="0 1 -3" color="#4CC3D9"></a-box>
+</a-scene>
+<script>
+document.getElementById('startBtn').addEventListener('click', () => {
+document.querySelector('#bgm').components.sound.playSound();
+});
+</script>
+</body>
+</html>
